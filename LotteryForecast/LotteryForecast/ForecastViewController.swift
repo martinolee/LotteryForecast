@@ -28,6 +28,8 @@ class ForecastViewController: UIViewController {
         forecastTableView.delegate = self
         forecastTableView.dataSource = self
         
+        forecastTableView.separatorColor = .clear
+        
         ballList.append(firstBall)
         ballList.append(secondBall)
         ballList.append(thirdBall)
