@@ -57,10 +57,10 @@ class ForecastViewController: UIViewController {
     
     func changeBallColor(number: Int, ball: UILabel) {
         if (number >= 1 ) && (number <= 10) { ball.backgroundColor = lotteryBall.yellow.color() } else
-        if (number >= 11) && (number <= 20) { ball.backgroundColor = lotteryBall.blue.color() } else
-        if (number >= 21) && (number <= 30) { ball.backgroundColor = lotteryBall.red.color() } else
-        if (number >= 31) && (number <= 40) { ball.backgroundColor = lotteryBall.black.color() } else
-        if (number >= 41) && (number <= 45) { ball.backgroundColor = lotteryBall.green.color() }
+        if (number >= 11) && (number <= 20) { ball.backgroundColor = lotteryBall.blue  .color() } else
+        if (number >= 21) && (number <= 30) { ball.backgroundColor = lotteryBall.red   .color() } else
+        if (number >= 31) && (number <= 40) { ball.backgroundColor = lotteryBall.black .color() } else
+        if (number >= 41) && (number <= 45) { ball.backgroundColor = lotteryBall.green .color() }
     }
     
     @IBAction func showForecast(_ sender: Any) {
@@ -124,11 +124,11 @@ enum lotteryBall {
     
     func color() -> UIColor {
         switch self {
-        case .yellow: return UIColor(red: 255/255, green: 190/255, blue: 50/255,  alpha: 1)
-        case .blue:   return UIColor(red: 100/255, green: 100/255, blue: 255/255, alpha: 1)
-        case .red:    return UIColor(red: 255/255, green: 100/255, blue: 100/255, alpha: 1)
-        case .black:  return UIColor(red: 50/255,  green: 50/255,  blue: 50/255,  alpha: 1)
-        case .green:  return UIColor(red: 90/255,  green: 200/255, blue: 140/255, alpha: 1)
+        case .yellow: return UIColor(red: 255 / 255, green: 190 / 255, blue: 50  / 255, alpha: 1)
+        case .blue  : return UIColor(red: 100 / 255, green: 100 / 255, blue: 255 / 255, alpha: 1)
+        case .red   : return UIColor(red: 255 / 255, green: 100 / 255, blue: 100 / 255, alpha: 1)
+        case .black : return UIColor(red: 50  / 255, green: 50  / 255, blue: 50  / 255, alpha: 1)
+        case .green : return UIColor(red: 90  / 255, green: 200 / 255, blue: 140 / 255, alpha: 1)
         }
     }
 }
