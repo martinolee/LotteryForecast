@@ -58,11 +58,11 @@ class ForecastViewController: UIViewController {
     }
     
     func changeBallColor(number: Int, ball: UILabel) {
-        if (number >= 1 ) && (number <= 10) { ball.backgroundColor = lotteryBall.yellow.color() } else
-        if (number >= 11) && (number <= 20) { ball.backgroundColor = lotteryBall.blue  .color() } else
-        if (number >= 21) && (number <= 30) { ball.backgroundColor = lotteryBall.red   .color() } else
-        if (number >= 31) && (number <= 40) { ball.backgroundColor = lotteryBall.black .color() } else
-        if (number >= 41) && (number <= 45) { ball.backgroundColor = lotteryBall.green .color() }
+        if (number > 40) { ball.backgroundColor = lotteryBall.green .color() } else
+        if (number > 30) { ball.backgroundColor = lotteryBall.black .color() } else
+        if (number > 20) { ball.backgroundColor = lotteryBall.red   .color() } else
+        if (number > 10) { ball.backgroundColor = lotteryBall.blue  .color() } else
+        if (number > 0 ) { ball.backgroundColor = lotteryBall.yellow.color() }
     }
     
     @IBAction func showForecast(_ sender: Any) {
