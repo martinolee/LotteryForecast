@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		721DADF1238504C4005A6F44 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DADF0238504C4005A6F44 /* ForecastTableViewCell.swift */; };
+		72907F2623863A700057D7B0 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72907F2523863A700057D7B0 /* Lottery.swift */; };
 		72E516042384FA3E002B1E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E516032384FA3E002B1E7A /* AppDelegate.swift */; };
 		72E516062384FA3E002B1E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E516052384FA3E002B1E7A /* SceneDelegate.swift */; };
 		72E516082384FA3E002B1E7A /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E516072384FA3E002B1E7A /* ForecastViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		721DADF0238504C4005A6F44 /* ForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastTableViewCell.swift; sourceTree = "<group>"; };
+		72907F2523863A700057D7B0 /* Lottery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
 		72E516002384FA3E002B1E7A /* LotteryForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotteryForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E516032384FA3E002B1E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E516052384FA3E002B1E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				72E5160C2384FA3F002B1E7A /* Assets.xcassets */,
 				72E5160E2384FA3F002B1E7A /* LaunchScreen.storyboard */,
 				72E516112384FA3F002B1E7A /* Info.plist */,
+				72907F2523863A700057D7B0 /* Lottery.swift */,
 			);
 			path = LotteryForecast;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				72E516082384FA3E002B1E7A /* ForecastViewController.swift in Sources */,
 				72E516042384FA3E002B1E7A /* AppDelegate.swift in Sources */,
 				72E516062384FA3E002B1E7A /* SceneDelegate.swift in Sources */,
+				72907F2623863A700057D7B0 /* Lottery.swift in Sources */,
 				721DADF1238504C4005A6F44 /* ForecastTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

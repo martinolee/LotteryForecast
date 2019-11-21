@@ -20,7 +20,7 @@ class ForecastViewController: UIViewController {
     
     var ballList = Array<UILabel>()
     
-    var forecastList = Array<[Int]>()
+    let lottery = Lottery()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,34 +45,22 @@ class ForecastViewController: UIViewController {
         
     }
     
-    func makeNumbers() -> [Int] {
-        var lotteryNumbers = Array<Int>()
-        
-        for lotteryNumber in 1...45 { lotteryNumbers.append(lotteryNumber) }
-        
-        lotteryNumbers = lotteryNumbers.shuffled()
-        lotteryNumbers = Array(lotteryNumbers.dropLast(39))
-        lotteryNumbers = lotteryNumbers.sorted()
-        
-        return lotteryNumbers
-    }
-    
     func changeBallColor(number: Int, ball: UILabel) {
-        if (number > 40) { ball.backgroundColor = lotteryBall.green .color() } else
-        if (number > 30) { ball.backgroundColor = lotteryBall.black .color() } else
-        if (number > 20) { ball.backgroundColor = lotteryBall.red   .color() } else
-        if (number > 10) { ball.backgroundColor = lotteryBall.blue  .color() } else
-        if (number > 0 ) { ball.backgroundColor = lotteryBall.yellow.color() }
+        if (number > 40) { ball.backgroundColor = LotteryBall.green .color() } else
+        if (number > 30) { ball.backgroundColor = LotteryBall.black .color() } else
+        if (number > 20) { ball.backgroundColor = LotteryBall.red   .color() } else
+        if (number > 10) { ball.backgroundColor = LotteryBall.blue  .color() } else
+        if (number > 0 ) { ball.backgroundColor = LotteryBall.yellow.color() }
     }
     
     @IBAction func showForecast(_ sender: Any) {
-        forecastList.append(makeNumbers())
+        lottery.forecastList.append(lottery.makeNumbers())
         
         for index in 0 ..< ballList.count {
             let ball = ballList[index]
-            let forecastIndex = forecastList.count - 1
+            let forecastIndex = lottery.forecastList.count - 1
             
-            ball.text = "\(forecastList[forecastIndex][index])"
+            ball.text = "\(lottery.forecastList[forecastIndex][index])"
             
             changeBallColor(number: Int(ball.text!)!, ball: ball)
         }
@@ -84,12 +72,12 @@ class ForecastViewController: UIViewController {
 
 extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return forecastList.count - 1
+        return lottery.forecastList.count - 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ForecastCell") as! ForecastTableViewCell
-        let target = forecastList[indexPath.row]
+        let target = lottery.forecastList[indexPath.row]
         
         let deviceWidth = UIScreen.main.bounds.width
         
@@ -119,18 +107,4 @@ extension ForecastViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-}
-
-enum lotteryBall {
-    case yellow, blue, red, black, green
-    
-    func color() -> UIColor {
-        switch self {
-        case .yellow: return UIColor(red: 255 / 255, green: 190 / 255, blue: 50  / 255, alpha: 1)
-        case .blue  : return UIColor(red: 100 / 255, green: 100 / 255, blue: 255 / 255, alpha: 1)
-        case .red   : return UIColor(red: 255 / 255, green: 100 / 255, blue: 100 / 255, alpha: 1)
-        case .black : return UIColor(red: 50  / 255, green: 50  / 255, blue: 50  / 255, alpha: 1)
-        case .green : return UIColor(red: 90  / 255, green: 200 / 255, blue: 140 / 255, alpha: 1)
-        }
-    }
 }
