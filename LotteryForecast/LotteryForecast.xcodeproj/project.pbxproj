@@ -10,7 +10,6 @@
 		721DADF1238504C4005A6F44 /* ForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DADF0238504C4005A6F44 /* ForecastTableViewCell.swift */; };
 		72907F2623863A700057D7B0 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72907F2523863A700057D7B0 /* Lottery.swift */; };
 		72E516042384FA3E002B1E7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E516032384FA3E002B1E7A /* AppDelegate.swift */; };
-		72E516062384FA3E002B1E7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E516052384FA3E002B1E7A /* SceneDelegate.swift */; };
 		72E516082384FA3E002B1E7A /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E516072384FA3E002B1E7A /* ForecastViewController.swift */; };
 		72E5160B2384FA3E002B1E7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E516092384FA3E002B1E7A /* Main.storyboard */; };
 		72E5160D2384FA3F002B1E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E5160C2384FA3F002B1E7A /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		72907F2523863A700057D7B0 /* Lottery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
 		72E516002384FA3E002B1E7A /* LotteryForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LotteryForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E516032384FA3E002B1E7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		72E516052384FA3E002B1E7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		72E516072384FA3E002B1E7A /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
 		72E5160A2384FA3E002B1E7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72E5160C2384FA3F002B1E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				72E516032384FA3E002B1E7A /* AppDelegate.swift */,
-				72E516052384FA3E002B1E7A /* SceneDelegate.swift */,
 				72E516072384FA3E002B1E7A /* ForecastViewController.swift */,
 				721DADF0238504C4005A6F44 /* ForecastTableViewCell.swift */,
 				72E516092384FA3E002B1E7A /* Main.storyboard */,
@@ -146,7 +143,6 @@
 			files = (
 				72E516082384FA3E002B1E7A /* ForecastViewController.swift in Sources */,
 				72E516042384FA3E002B1E7A /* AppDelegate.swift in Sources */,
-				72E516062384FA3E002B1E7A /* SceneDelegate.swift in Sources */,
 				72907F2623863A700057D7B0 /* Lottery.swift in Sources */,
 				721DADF1238504C4005A6F44 /* ForecastTableViewCell.swift in Sources */,
 			);
@@ -224,7 +220,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -293,6 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R46XFWWPMA;
 				INFOPLIST_FILE = LotteryForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -310,6 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R46XFWWPMA;
 				INFOPLIST_FILE = LotteryForecast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
