@@ -9,12 +9,12 @@
 import UIKit
 
 class ForecastViewController: UIViewController {
-    @IBOutlet weak var firstBall: UILabel!
+    @IBOutlet weak var firstBall : UILabel!
     @IBOutlet weak var secondBall: UILabel!
-    @IBOutlet weak var thirdBall: UILabel!
+    @IBOutlet weak var thirdBall : UILabel!
     @IBOutlet weak var fourthBall: UILabel!
-    @IBOutlet weak var fifthBall: UILabel!
-    @IBOutlet weak var sixthBall: UILabel!
+    @IBOutlet weak var fifthBall : UILabel!
+    @IBOutlet weak var sixthBall : UILabel!
     
     @IBOutlet weak var forecastTableView: UITableView!
     
@@ -40,7 +40,7 @@ class ForecastViewController: UIViewController {
         for ball in ballList {
             ball.layer.masksToBounds = true
             ball.layer.cornerRadius = ball.layer.frame.width / 2
-            // This process makes label look like a ball
+            // This process makes label looks like a ball
         }
         
     }
